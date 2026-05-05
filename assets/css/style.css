@@ -297,6 +297,121 @@ header .navbar ul li a:hover {
   pointer-events: none;
 }
 
+.home .hero-formulas {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.home .hero-formula {
+  position: absolute;
+  color: rgba(255, 255, 255, 0.22);
+  font-size: 1.15rem;
+  letter-spacing: 0.12rem;
+  line-height: 1.6;
+  text-shadow: 0 0 18px rgba(255, 255, 255, 0.24);
+  white-space: nowrap;
+  opacity: 0.92;
+  mix-blend-mode: screen;
+  filter: drop-shadow(0 0 24px rgba(0, 230, 255, 0.28));
+}
+
+.home .hero-formula::after {
+  content: "";
+  position: absolute;
+  inset: -0.4rem;
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.06);
+  box-shadow: 0 0 44px rgba(0, 230, 255, 0.16);
+  z-index: -1;
+}
+
+.home .hero-formula.formula-1 {
+  top: 8%;
+  left: 8%;
+  animation: floatFormula1 24s ease-in-out infinite alternate;
+}
+
+.home .hero-formula.formula-2 {
+  top: 18%;
+  right: 10%;
+  animation: floatFormula2 28s ease-in-out infinite alternate;
+}
+
+.home .hero-formula.formula-3 {
+  bottom: 20%;
+  left: 12%;
+  animation: floatFormula3 26s ease-in-out infinite alternate;
+}
+
+.home .hero-formula.formula-4 {
+  top: 32%;
+  left: 52%;
+  transform: translateX(-50%);
+  animation: floatFormula4 30s ease-in-out infinite alternate;
+}
+
+.home .hero-formula.formula-5 {
+  bottom: 14%;
+  right: 12%;
+  animation: floatFormula5 32s ease-in-out infinite alternate;
+}
+
+.home .hero-formula.formula-6 {
+  top: 60%;
+  right: 18%;
+  animation: floatFormula6 34s ease-in-out infinite alternate;
+}
+
+@keyframes floatFormula1 {
+  0% { transform: translate(0, 0) rotate(-3deg); }
+  25% { transform: translate(80px, 60px) rotate(5deg); }
+  50% { transform: translate(20vw, 10vh) rotate(-4deg); }
+  75% { transform: translate(40px, -70px) rotate(3deg); }
+  100% { transform: translate(0, 0) rotate(-3deg); }
+}
+
+@keyframes floatFormula2 {
+  0% { transform: translate(0, 0) rotate(2deg); }
+  25% { transform: translate(-60px, 70px) rotate(-4deg); }
+  50% { transform: translate(-25vw, 12vh) rotate(3deg); }
+  75% { transform: translate(20px, -80px) rotate(-2deg); }
+  100% { transform: translate(0, 0) rotate(2deg); }
+}
+
+@keyframes floatFormula3 {
+  0% { transform: translate(0, 0) rotate(1deg); }
+  25% { transform: translate(50px, -80px) rotate(-3deg); }
+  50% { transform: translate(12vw, -18vh) rotate(2deg); }
+  75% { transform: translate(-30px, 60px) rotate(-1deg); }
+  100% { transform: translate(0, 0) rotate(1deg); }
+}
+
+@keyframes floatFormula4 {
+  0% { transform: translateX(-50%) translate(0, 0) rotate(0deg); }
+  25% { transform: translateX(-50%) translate(60px, -50px) rotate(3deg); }
+  50% { transform: translateX(-50%) translate(-18vw, 10vh) rotate(-2deg); }
+  75% { transform: translateX(-50%) translate(80px, 70px) rotate(2deg); }
+  100% { transform: translateX(-50%) translate(0, 0) rotate(0deg); }
+}
+
+@keyframes floatFormula5 {
+  0% { transform: translate(0, 0) rotate(-2deg); }
+  25% { transform: translate(-80px, 40px) rotate(4deg); }
+  50% { transform: translate(-20vw, 8vh) rotate(-3deg); }
+  75% { transform: translate(50px, -60px) rotate(1deg); }
+  100% { transform: translate(0, 0) rotate(-2deg); }
+}
+
+@keyframes floatFormula6 {
+  0% { transform: translate(0, 0) rotate(-1deg); }
+  25% { transform: translate(70px, -50px) rotate(3deg); }
+  50% { transform: translate(22vw, -15vh) rotate(-3deg); }
+  75% { transform: translate(-40px, 80px) rotate(2deg); }
+  100% { transform: translate(0, 0) rotate(-1deg); }
+}
+
 .home::before {
   content: "";
   position: absolute;

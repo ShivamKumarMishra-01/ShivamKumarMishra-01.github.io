@@ -24,4 +24,4 @@ This repository contains a portfolio website for Shivam Kumar Mishra, showcasing
 - LinkedIn: https://www.linkedin.com/in/shivam-kumar-mishra-613134218/
 - GitHub: https://github.com/ShivamKumarMishra-01
 
-<h1 class="credit">Thanks to <a href="https://www.linkedin.com/in/jigar-sable"> jigar sable</a> for the template <br />Last updated on April 2026</h1>
+<h1 class="credit">Thanks to <a href="https://www.linkedin.com/in/jigar-sable"> jigar sable</a> for the template</h1>
