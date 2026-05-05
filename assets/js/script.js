@@ -66,9 +66,9 @@ $(document).ready(function () {
 
     // <!-- emailjs to mail contact form data -->
     $("#contact-form").submit(function (event) {
-        emailjs.init("fT6wj3c4RyPfE7IaD");
+        emailjs.init("jcIGdXB6FQYiO2bFp");
 
-        emailjs.sendForm('service_2f6la7b', 'template_hz0xt92', '#contact-form')
+        emailjs.sendForm('service_h4hj9vo', 'template_amwauni', '#contact-form')
             .then(function (response) {
                 console.log('SUCCESS!', response.status, response.text);
                 document.getElementById("contact-form").reset();
